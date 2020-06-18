@@ -39,3 +39,9 @@ text-align: center;
     font-size: 48px;
     color: white;
 }
+.bi-brightness-alt-high {
+    color: orange;
+}
+.bi-brightness-alt-high-fill {
+    color: yellow;
+}
