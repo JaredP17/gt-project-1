@@ -8,8 +8,9 @@
     font-family: 'Archivo Black', sans-serif;
 }
 
-.container{
-  background-color: #e8e8f0ec
+#main-screen-container{
+  display:block;
+  background-color: #fafaffec
 }
 
 .col-xs-12{
@@ -67,7 +68,9 @@
     background-color: #50514f
   }
 
-
+#location-screen-container{
+  display:none;
+}
 
 /* Colors
 #93E1D8 Middle Green Blue */
