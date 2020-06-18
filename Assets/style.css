@@ -1,0 +1,76 @@
+.navbar{
+    background-color: #90E0EF
+}
+
+#navbar-link{
+    color: #363537;
+    margin: auto;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.container{
+  background-color: #e8e8f0ec
+}
+
+.col-xs-12{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+#welcome-message-row{
+  height: 15px;
+}
+
+#welcome-message{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.location-button {
+    border: solid;
+    border-radius: 12px;
+    border: 2px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    margin: auto;
+    cursor: pointer;
+    width: 380px;
+    height: 80%;
+    white-space: normal;
+    table-layout: fixed;
+ display: block;
+  }
+
+  #beach-button{
+    background-color: #ffe066
+  }
+
+  #mountain-button{
+    background-color: #5a9b5d
+  }
+
+  #city-button{
+    background-color: #f25f5c
+  }
+
+  #lake-button{
+    background-color: #70c1b3
+  }
+
+  #space-button{
+    background-color: #50514f
+  }
+
+
+
+/* Colors
+#93E1D8 Middle Green Blue */
+#96E8BC Light green blue
+good mountain: #1b4332
+another space 247ba0
