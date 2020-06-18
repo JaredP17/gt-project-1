@@ -11,3 +11,12 @@
     align-items: center;
     width: 100%;
 }
+.weatherCard {
+    margin: 2%;
+    padding: 2%;
+    border: 2%;
+    align-items: center;
+}
+.card-img-top {
+    align-items: center;
+}
