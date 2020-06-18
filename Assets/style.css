@@ -2,6 +2,10 @@
     background-color: #90E0EF
 }
 
+.row {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
 #navbar-link{
     color: #363537;
     margin: auto;
@@ -69,9 +73,46 @@
   }
 
 #location-screen-container{
-  display:none;
+  display:block;
 }
-
+.drinks {
+  font-size: 48px;
+  color: white;
+}
+.bi-brightness-alt-high {
+  color: orange;
+}
+.bi-brightness-alt-high-fill {
+  color: yellow;
+}
+#cityName {
+  text-align: center;
+   color: darkgrey;
+  }
+  .mainVideo {
+      margin: auto;
+      padding: 2%;
+      border: 2%;
+      align-items: center;
+  }
+  .jumbotron {
+      align-items: center;
+      width: 100%;
+  }
+  .card {
+      background-color: skyblue;
+  }
+  .weather {
+      width: 90%;
+      height: 95%;
+      margin: 2%;
+      padding: 2%;
+      color: white;
+  }
+  .music {
+      color: white;
+      text-align: center;
+  }
 /* Colors
 #93E1D8 Middle Green Blue */
 #96E8BC Light green blue
