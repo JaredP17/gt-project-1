@@ -60,22 +60,41 @@
 
     <!-- Location Container -->
     <div class="container" id="location-screen-container">
+        <!--Location name and video-->
         <div class="row">
-            <div class="jumbotron jumbotron-fluid" id="location-jumbo">
-                <h2 class="display-4 d-flex justify-content-center" id="cityName">
+            <div class="col-xs-12">
+                <p id="cityName">
                     Waimea Bay, Hawaii
-                </h2>
+                </p>
+
                 <iframe width="380" height="300" src="https://www.youtube.com/embed/-gjQP7ABEK0?autoplay=1"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen id="location-video"></iframe>
             </div>
         </div>
+        <!--Weather Cards-->
         <div class="row">
-            <div class="col-sm-12 weatherCard d-flex justify-content-center">
-                <div class="card">
-                    <p class="weather">image of weather // temp: // wind:</p>
-                    <p class="weather">
-                        <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
+            <div class="col-xs-12" id="weather-col">
+                <!--Current Conditions-->
+                <row>
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Current Conditions</h5>
+                    <p class="card-text">Temp, Wind, Icon</p>
+                </div>
+            </div>
+        </row>
+        <!--Sunset/Sunrise Times-->
+        <row>
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <p class="card-text">Sunrise/Sunset Times w/ Icon</p>
+            </div>
+        </div>
+    </row>
+</div>
+</div>
+                        <!-- <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z" />
@@ -92,7 +111,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Music card if needed -->
         <!-- <div class="row"> -->
@@ -119,6 +138,8 @@
         </div>
       </div> -->
 
+      
+<!--Drink Card-->
         <div class="row">
             <div class="col-sm-12 drinkCard d-flex justify-content-center">
                 <div class="card">
