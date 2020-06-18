@@ -1,8 +1,8 @@
 .navbar{
     background-color: blue;
-    text-align: center;
 }
 
 #navbar-link{
     color: white;
+    margin: auto;
 }
