@@ -1,8 +1,9 @@
 #cityName {
+text-align: center;
  color: darkgrey;
 }
 .mainVideo {
-    margin: 2%;
+    margin: auto;
     padding: 2%;
     border: 2%;
     align-items: center;
@@ -11,12 +12,30 @@
     align-items: center;
     width: 100%;
 }
-.weatherCard {
+.card {
+    background-color: skyblue;
+}
+.weather {
+    width: 90%;
+    height: 95%;
     margin: 2%;
     padding: 2%;
-    border: 2%;
-    align-items: center;
+    color: white;
 }
-.card-img-top {
-    align-items: center;
+.music {
+    color: white;
+    text-align: center;
+}
+
+.bi-music-player-fill {
+    margin: 2%;
+    padding: 2%;
+}
+.row {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.drinks {
+    font-size: 48px;
+    color: white;
 }
