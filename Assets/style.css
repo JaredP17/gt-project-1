@@ -7,6 +7,11 @@
     margin: auto;
 }
 
+.col-xs-12{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
 .home-button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -17,12 +22,12 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: auto;
     cursor: pointer;
     width: 200px;
     height: 80%;
     white-space: normal;
     table-layout: fixed;
- 
+ display: block;
   }
 
