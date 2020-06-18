@@ -1,3 +1,4 @@
+.body{background-color: #fafaffec ;}
 .navbar{
     background-color: #90E0EF
 }
@@ -73,6 +74,7 @@
   }
 
 #location-screen-container{
+  background-color: #fafaffec;
   display:block;
 }
 .drinks {
@@ -84,6 +86,9 @@
 }
 .bi-brightness-alt-high-fill {
   color: yellow;
+}
+#location-jumbo{
+  background-color: #fafaffec;
 }
 #cityName {
   text-align: center;
