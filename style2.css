@@ -1,0 +1,13 @@
+#cityName {
+ color: darkgrey;
+}
+.mainVideo {
+    margin: 2%;
+    padding: 2%;
+    border: 2%;
+    align-items: center;
+}
+.jumbotron {
+    align-items: center;
+    width: 100%;
+}
