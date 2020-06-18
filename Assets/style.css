@@ -116,6 +116,10 @@
       padding: 2%;
       color: white;
   }
+  #drink-pic{
+    width: 100px;
+    height:100px;
+  }
   /* .location-video{
     align-items: center;
     margin: 0 auto;
