@@ -1,3 +1,7 @@
+.body{
+  background-color: #fafaffec;
+}
+
 .navbar{
     background-color: #90E0EF
 }
@@ -73,7 +77,10 @@
   }
 
 #location-screen-container{
+  background-color: #fafaffec;
   display:block;
+  text-align: center;
+  margin: auto;
 }
 .drinks {
   font-size: 48px;
@@ -85,16 +92,16 @@
 .bi-brightness-alt-high-fill {
   color: yellow;
 }
+#location-jumbo{
+  background-color: #fafaffec;
+}
 #cityName {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
   text-align: center;
-   color: darkgrey;
+   color: black;
   }
-  .mainVideo {
-      margin: auto;
-      padding: 2%;
-      border: 2%;
-      align-items: center;
-  }
+
   .jumbotron {
       align-items: center;
       width: 100%;
@@ -109,10 +116,18 @@
       padding: 2%;
       color: white;
   }
-  .music {
+  #drink-pic{
+    width: 100px;
+    height:100px;
+  }
+  /* .location-video{
+    align-items: center;
+    margin: 0 auto;
+  } */
+  /* .music {
       color: white;
       text-align: center;
-  }
+  } */
 /* Colors
 #93E1D8 Middle Green Blue */
 #96E8BC Light green blue
