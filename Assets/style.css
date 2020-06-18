@@ -5,6 +5,11 @@
 #navbar-link{
     color: #363537;
     margin: auto;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.container{
+  background-color: #e8e8f0ec
 }
 
 .col-xs-12{
@@ -12,16 +17,27 @@
     margin: auto;
     padding: 5px;
 }
+#welcome-message-row{
+  height: 15px;
+}
+
+#welcome-message{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
 .location-button {
     border: solid;
     border-radius: 12px;
     border: 2px;
     color: black;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
     margin: auto;
     cursor: pointer;
     width: 380px;
