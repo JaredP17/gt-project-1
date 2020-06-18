@@ -79,6 +79,8 @@
 #location-screen-container{
   background-color: #fafaffec;
   display:block;
+  text-align: center;
+  margin: auto;
 }
 .drinks {
   font-size: 48px;
@@ -99,12 +101,7 @@
   text-align: center;
    color: black;
   }
-  .mainVideo {
-      margin: auto;
-      padding: 2%;
-      border: 2%;
-      align-items: center;
-  }
+
   .jumbotron {
       align-items: center;
       width: 100%;
@@ -119,10 +116,14 @@
       padding: 2%;
       color: white;
   }
-  .music {
+  /* .location-video{
+    align-items: center;
+    margin: 0 auto;
+  } */
+  /* .music {
       color: white;
       text-align: center;
-  }
+  } */
 /* Colors
 #93E1D8 Middle Green Blue */
 #96E8BC Light green blue
