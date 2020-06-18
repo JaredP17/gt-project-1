@@ -6,3 +6,23 @@
     color: white;
     margin: auto;
 }
+
+.home-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 80%;
+    white-space: normal;
+    table-layout: fixed;
+ 
+  }
+
