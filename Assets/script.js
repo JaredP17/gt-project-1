@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
+    
+
     var APIKey = "889cd95742cb4d318b134906ce82bcb0";
-    var city = []
+    var city = Atlanta
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + APIKey;
     $.ajax({
         url: queryURL,
