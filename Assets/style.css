@@ -11,9 +11,9 @@
   margin-top: 2%;
 }
 #navbar-link{
-    color: #363537;
+    color: #05525e;
     margin: auto;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #main-screen-container{
@@ -81,6 +81,7 @@
   display:block;
   text-align: center;
   margin: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 .drinks {
   font-size: 48px;
@@ -130,6 +131,6 @@
   } */
 /* Colors
 #93E1D8 Middle Green Blue */
-#96E8BC Light green blue
+/* #96E8BC Light green blue
 good mountain: #1b4332
-another space 247ba0
+another space 247ba0 */
