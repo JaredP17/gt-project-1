@@ -43,28 +43,28 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <button class="location-button" id="mountain-button"value="mountain">Mountain</button>
+                <button class="location-button" id="mountain-button" value="mountain">Mountain</button>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <button class="location-button" id="city-button"value="city">City</button>
+                <button class="location-button" id="city-button" value="city">City</button>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <button class="location-button" id="lake-button"value="lake">Lake</button>
+                <button class="location-button" id="lake-button" value="lake">Lake</button>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <button class="location-button" id="space-button"value="space">Space</button>
+                <button class="location-button" id="space-button" value="space">Space</button>
             </div>
         </div>
     </div>
 
     <!-- Location Container -->
-    <div class="container" id="location-screen-container">
+    <div class="container"  id="location-screen-container">
         <!--Location name and video-->
         <div class="row">
             <div class="col-xs-12">
@@ -78,28 +78,28 @@
             </div>
         </div>
         <!--Weather Cards-->
-        <div class="row">
-            <div class="col-xs-12" id="weather-col">
+        <div class="row" id="weather-col">
+            <div class="col-xs-12 col-lg-4">
                 <!--Current Conditions-->
-                <row>
-                    <div class="card text-white mb-3" style="max-width: 18rem;" id="weather-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Current Conditions</h5>
-                            <p class="card-text" id="current-weather">Temp, Wind, Icon</p>
-                        </div>
+
+                <div class="card text-white mb-3" style="max-width: 18rem;" id="weather-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Conditions</h5>
+                        <p class="card-text" id="current-weather">Temp, Wind, Icon</p>
                     </div>
-                </row>
-                <!--Sunset/Sunrise Times-->
-                <row>
-                    <div class="card text-white  mb-3" style="max-width: 18rem;" id="sunset-card">
-                        <div class="card-body">
-                            <p class="card-text" id="sun-time">Sunrise/Sunset Times w/ Icon</p>
-                        </div>
-                    </div>
-                </row>
+                </div>
             </div>
-        </div>
-        <!-- <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
+
+            <!--Sunset/Sunrise Times-->
+            <div class="col-xs-12 col-lg-4"" id=" sunrise-col">
+                <div class="card text-white  mb-3" style="max-width: 18rem;" id="sunset-card">
+                    <div class="card-body">
+                        <p class="card-text" id="sun-time">Sunrise/Sunset Times w/ Icon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z" />
@@ -118,9 +118,9 @@
             </div>
         </div> -->
 
-        <!-- Music card if needed -->
-        <!-- <div class="row"> -->
-        <!-- <div class="col-sm-12 weatherCard d-flex justify-content-center">
+            <!-- Music card if needed -->
+            <!-- <div class="row"> -->
+            <!-- <div class="col-sm-12 weatherCard d-flex justify-content-center">
           <div class="card">
             <p class="music">
               music
@@ -144,38 +144,37 @@
       </div> -->
 
 
-        <!--Drink Card-->
-        <div class="row">
-            <div class="col-xs-12" id="drink-col">
-                <div class="row">
-                    <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
-                        <div class="card-header" id="drink-name"></div>
-                        <div class="card-body">
-                            <img src="" id="drink-pic" /><br>
-                            <button type="button" class="btn btn-primary" id="drink-recipe-button">Recipe</button><br>
-                        </div>
+            <!--Drink Card-->
+
+            <div class="col-xs-12 col-lg-4"" id=" drink-col">
+                <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
+                    <div class="card-header" id="drink-name"></div>
+                    <div class="card-body">
+                        <img src="" id="drink-pic" /><br>
+                        <button type="button" class="btn btn-primary" id="drink-recipe-button">Recipe</button><br>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- https://recipetineats.com/wp-content/uploads/2019/09/Tequila-Sunrise.jpg -->
-        <!-- jQuery Links -->
+    </div>
+    <!-- https://recipetineats.com/wp-content/uploads/2019/09/Tequila-Sunrise.jpg -->
+    <!-- jQuery Links -->
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
-        <script src="Assets/script.js"></script>
-        <script src="./Assets/drinksAPI.js"></script>
-        <!-- Moment
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="Assets/script.js"></script>
+    <script src="./Assets/drinksAPI.js"></script>
+    <!-- Moment
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
-        <!-- AJAX JQ -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- AJAX JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
