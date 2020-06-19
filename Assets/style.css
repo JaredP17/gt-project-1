@@ -1,88 +1,87 @@
-.whole-site{
+.whole-site {
   background-color: #f7ecf1ec;
 }
 
-.navbar{
-    background-color: #2d8999
+.navbar {
+  background-color: #2d8999;
 }
 
 /* .row {
   margin-bottom: 2%;
   margin-top: 2%;
 } */
-#navbar-link{
-    color: white;
-    margin: auto;
-    font-family: 'Itim', cursive;
-    font-size: 25px;
+#navbar-link {
+  color: white;
+  margin: auto;
+  font-family: "Itim", cursive;
+  font-size: 25px;
 }
 
-#main-screen-container{
-  display:block;
-   background-color: #f7ecf1ec;
+#main-screen-container {
+  display: block;
+  background-color: #f7ecf1ec;
 }
 
-.col-xs-12{
-    text-align: center;
-    margin: auto;
-    padding: 5px;
+.col-xs-12 {
+  text-align: center;
+  margin: auto;
+  padding: 5px;
 }
-#welcome-message-row{
+#welcome-message-row {
   height: 15px;
 }
 
-#welcome-message{
-  font-family: 'Montserrat', sans-serif;
-  
+#welcome-message {
+  font-family: "Montserrat", sans-serif;
 }
 
 .location-button {
-    border: solid;
-    border-radius: 12px;
-    border: 2px;
-    color: black;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    color: whitesmoke;
-    margin: auto;
-    cursor: pointer;
-    width: 380px;
-    height: 80%;
-    white-space: normal;
-    table-layout: fixed;
- display: block;
-  }
+  border: solid;
+  border-radius: 12px;
+  border: 2px;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  margin: auto;
+  cursor: pointer;
+  width: 380px;
+  height: 80%;
+  white-space: normal;
+  table-layout: fixed;
+  display: block;
+}
 
-  #beach-button{
-    background-color: #e6b32a
-  }
+#beach-button {
+  background-color: #e6b32a;
+}
 
-  #mountain-button{
-    background-color: #478b4a
-  }
+#mountain-button {
+  background-color: #478b4a;
+}
 
-  #city-button{
-    background-color: #df6603
-  }
+#city-button {
+  background-color: #df6603;
+}
 
-  #lake-button{
-    background-color: #70c1b3
-  }
+#lake-button {
+  background-color: #70c1b3;
+}
 
-  #space-button{
-    background-color: #7085b1
-  }
+#space-button {
+  background-color: #7085b1;
+}
 
-#location-screen-container{
+#location-screen-container {
   background-color: #f7ecf1ec;
-  display:none;
+  display: none;
   text-align: center;
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .drinks {
   font-size: 48px;
@@ -94,39 +93,52 @@
 .bi-brightness-alt-high-fill {
   color: yellow;
 }
-#location-jumbo{
+#location-jumbo {
   background-color: #fafaffec;
 }
 #cityName {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   text-align: center;
-   color: black;
-  }
+  color: black;
+}
 
-  .jumbotron {
-      align-items: center;
-      width: 100%;
-  }
-  .card {
-      background-color: skyblue;
-  }
-  .weather {
-      width: 90%;
-      height: 95%;
-      margin: 2%;
-      padding: 2%;
-      color: white;
-  }
-  #drink-pic{
-    width: 100px;
-    height:100px;
-  }
-  /* .location-video{
+.jumbotron {
+  align-items: center;
+  width: 100%;
+}
+
+#weather-card {
+  background-color: #2d8999;
+}
+#sunset-card {
+  background-color: #2d8999;
+}
+#drink-card {
+  background-color: #2d8999;
+}
+#drink-recipe-button {
+  background-color: #f39c18;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.weather {
+  width: 90%;
+  height: 95%;
+  margin: 2%;
+  padding: 2%;
+  color: white;
+}
+#drink-pic {
+  width: 100px;
+  height: 100px;
+}
+/* .location-video{
     align-items: center;
     margin: 0 auto;
   } */
-  /* .music {
+/* .music {
       color: white;
       text-align: center;
   } */
