@@ -1,7 +1,8 @@
 $(document).ready(function () {
+console.log("hi");
 
-  var randomDrinkURl =
-    "https://www.thecocktaildb.com/api/json/v1/1/random.php?Alcoholic";
+  var randomDrinkURl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=bees_knees";
+ 
   $.ajax({
     url: randomDrinkURl,
     method: "GET",
@@ -9,11 +10,13 @@ $(document).ready(function () {
     console.log(randomDrinkResponse);
     console.log(typeof randomDrinkResponse.drinks[0]);
     console.log(randomDrinkResponse.drinks[0].strDrink);
-    console.log(randomDrinkResponse.drinks[0].strDrinkThumb);
-    console.log(randomDrinkResponse.drinks[0].strIngredient1);
-    console.log(randomDrinkResponse.drinks[0].strIngredient2);
-    console.log(randomDrinkResponse.drinks[0].strIngredient3);
-    console.log(randomDrinkResponse.drinks[0].strInstructions);
+    $("#drink-name").text(randomDrinkResponse.drinks[0].strDrink)
+        console.log(randomDrinkResponse.drinks[0].strDrink)
+    // console.log(randomDrinkResponse.drinks[0].strDrinkThumb);
+    // console.log(randomDrinkResponse.drinks[0].strIngredient1);
+    // console.log(randomDrinkResponse.drinks[0].strIngredient2);
+    // console.log(randomDrinkResponse.drinks[0].strIngredient3);
+    // console.log(randomDrinkResponse.drinks[0].strInstructions);
 
     // code to try to get ingredients, saving for later
     //   const drinksObject = randomDrinkResponse.drinks[0]
