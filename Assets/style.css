@@ -1,24 +1,25 @@
-.body{
-  background-color: #fafaffec;
+.whole-site{
+  background-color: #f7ecf1ec;
 }
 
 .navbar{
-    background-color: #90E0EF
+    background-color: #2d8999
 }
 
-.row {
+/* .row {
   margin-bottom: 2%;
   margin-top: 2%;
-}
+} */
 #navbar-link{
-    color: #05525e;
+    color: white;
     margin: auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
 }
 
 #main-screen-container{
   display:block;
-  background-color: #fafaffec
+   background-color: #f7ecf1ec;
 }
 
 .col-xs-12{
@@ -57,15 +58,15 @@
   }
 
   #beach-button{
-    background-color: #ffe066
+    background-color: #e6b32a
   }
 
   #mountain-button{
-    background-color: #5a9b5d
+    background-color: #478b4a
   }
 
   #city-button{
-    background-color: #f25f5c
+    background-color: #df6603
   }
 
   #lake-button{
@@ -73,11 +74,11 @@
   }
 
   #space-button{
-    background-color: #50514f
+    background-color: #7085b1
   }
 
 #location-screen-container{
-  background-color: #fafaffec;
+  background-color: #f7ecf1ec;
   display:block;
   text-align: center;
   margin: auto;
