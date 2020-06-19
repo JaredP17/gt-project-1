@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-//Click on nav-bar, hides main screen.  This still needs a conditional. 
-$("#nav-bar").on("click", function(event){
-    event.preventDefault();
-    //if statement for "if main screen show, hide, if location screen, show"
-    $("#main-screen-container").hide();
-    console.log("nav-bar clicked");
-})
-
 
     var APIKey = "889cd95742cb4d318b134906ce82bcb0";
     var city = []
@@ -34,4 +26,26 @@ $("#nav-bar").on("click", function(event){
         console.log(time.split(":")[0] + ":" + time.split(":")[1] + " PM");
     })
 
-})
+
+  //Click on nav-bar, hides location.  I don't know if conditional works properly.
+  $("#nav-bar").on("click", function (event) {
+    event.preventDefault();
+    //if statement for "if main screen show, hide, if location screen, show"
+    if ($("#location-screen-container").css("display", "block")) {
+      $("#location-screen-container").css("display", "none");
+      $("#main-screen-container").css("display", "block");
+    } else {
+    }
+    console.log("nav-bar clicked");
+  });
+
+  //Mountain-Button Click display location, hide home.
+  $("#mountain-button").on("click", function (event) {
+    event.preventDefault();
+    console.log("Mountain Button Clicked");
+    $("#main-screen-container").css("display", "none");
+    $("#location-screen-container").css("display", "block");
+  });
+
+
+});
