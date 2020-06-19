@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+//Click on nav-bar, hides main screen.  This still needs a conditional. 
 $("#nav-bar").on("click", function(event){
     event.preventDefault();
     //if statement for "if main screen show, hide, if location screen, show"
