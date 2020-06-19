@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+$("#nav-bar").on("click", function(event){
+    event.preventDefault();
+    //if statement for "if main screen show, hide, if location screen, show"
+    $("#main-screen-container").hide();
+    console.log("nav-bar clicked");
+})
+
+
     var APIKey = "889cd95742cb4d318b134906ce82bcb0";
     var city = []
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + APIKey;
