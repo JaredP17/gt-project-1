@@ -22,7 +22,7 @@
   background-color: #f7ecf1ec;
 }
 
-.col-xs-12 {
+.col-12 {
   text-align: center;
   margin: auto;
   padding: 5px;
@@ -110,10 +110,10 @@
   width: 100%;
 }
 
-#weather-card {
-  background-color: #2d8999;
+.card{
+  width: 100%;
 }
-#sunset-card {
+#sun-card {
   background-color: #2d8999;
 }
 #drink-card {
