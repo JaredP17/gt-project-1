@@ -30,74 +30,73 @@
     <!-- Main Screen Container-->
     <div class="container" id="main-screen-container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="row" id="welcome-message-row">
+            <div class="col-12">
+                <div class="row mt-4" id="welcome-message-row">
                     <p id="welcome-message">Choose your escape...</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
+        <div class="row mt-4">
+            <div class="col-12 col-lg">
                 <button class="location-button" id="beach-button" value="beach">Beach</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
+
+            <div class="col-12 col-lg">
                 <button class="location-button" id="mountain-button" value="mountain">Mountain</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
+
+            <div class="col-12 col-lg">
                 <button class="location-button" id="city-button" value="city">City</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
+
+            <div class="col-12 col-lg">
                 <button class="location-button" id="lake-button" value="lake">Lake</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
+
+            <div class="col-12 col-lg">
                 <button class="location-button" id="space-button" value="space">Space</button>
             </div>
         </div>
     </div>
 
     <!-- Location Container -->
-    <div class="container"  id="location-screen-container">
+    <div class="container" id="location-screen-container">
         <!--Location name and video-->
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-12 col-lg-12">
                 <p id="cityName">
                     Waimea Bay, Hawaii
                 </p>
 
-                <iframe width="380" height="300" src="https://www.youtube.com/embed/-gjQP7ABEK0?autoplay=1"
+                <iframe width="380" height="300" src="https://www.youtube.com/embed/-gjQP7ABEK0"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen id="location-video"></iframe>
             </div>
         </div>
-        <!--Weather Cards-->
-        <div class="row" id="weather-col">
-            <div class="col-xs-12 col-lg-4">
-                <!--Current Conditions-->
 
-                <div class="card text-white mb-3" style="max-width: 18rem;" id="weather-card">
+
+            <!--Weather Card-->
+            <div class="row">
+            <div class="col-12 col-lg-3" id=" sun-col">
+                <div class="card text-white  mb-3" style="max-width: 18rem;" id="sun-card">
                     <div class="card-body">
-                        <h5 class="card-title">Current Conditions</h5>
-                        <p class="card-text" id="current-weather">Temp, Wind, Icon</p>
+                        <h4 class="cityName"> <img id="weatherIconUrl"> </h4>
+                        <img id="weatherIcon">
+                        <p class="weather" id="temp"></p>
+                        <p class="weather" id="windSpeed"></p>
+                          <p class="weather"> </p>
+                          <p class="weather" id="sunrise">  <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"/>
+                          </svg>  <span id="sunriseTime">Sunrise: </span>  </p>
+                          <p class="weather" id="sunset"> <svg class="bi bi-brightness-alt-high" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M5.041 10.5h5.918a3 3 0 0 0-5.918 0zM4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"/>
+                          </svg>
+                          <span id="sunsetTime">Sunset:</span>
+                          </p>
                     </div>
                 </div>
             </div>
-
-            <!--Sunset/Sunrise Times-->
-            <div class="col-xs-12 col-lg-4"" id=" sunrise-col">
-                <div class="card text-white  mb-3" style="max-width: 18rem;" id="sunset-card">
-                    <div class="card-body">
-                        <p class="card-text" id="sun-time">Sunrise/Sunset Times w/ Icon</p>
-                    </div>
-                </div>
-            </div>
+        
 
             <!-- <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +145,7 @@
 
             <!--Drink Card-->
 
-            <div class="col-xs-12 col-lg-4"" id=" drink-col">
+            <div class="col-12 col-lg-3" id= "drink-col">
                 <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
                     <div class="card-header" id="drink-name"></div>
                     <div class="card-body">

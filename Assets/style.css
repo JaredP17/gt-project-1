@@ -1,4 +1,4 @@
-.whole-site {
+#whole-site {
   background-color: #f7ecf1ec;
 }
 
@@ -22,7 +22,7 @@
   background-color: #f7ecf1ec;
 }
 
-.col-xs-12 {
+.col-12 {
   text-align: center;
   margin: auto;
   padding: 5px;
@@ -34,6 +34,8 @@
 
 #welcome-message {
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(29, 29, 39);
 }
 
 .location-button {
@@ -50,8 +52,7 @@
   color: whitesmoke;
   margin: auto;
   cursor: pointer;
-  width: 380px;
-  height: 80%;
+  width: 100%;
   white-space: normal;
   table-layout: fixed;
   display: block;
@@ -109,10 +110,10 @@
   width: 100%;
 }
 
-#weather-card {
-  background-color: #2d8999;
+.card{
+  width: 100%;
 }
-#sunset-card {
+#sun-card {
   background-color: #2d8999;
 }
 #drink-card {
