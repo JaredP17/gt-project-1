@@ -1,15 +1,25 @@
+.whole-site{
+  background-color: #f7ecf1ec;
+}
+
 .navbar{
-    background-color: #90E0EF
+    background-color: #2d8999
 }
 
+/* .row {
+  margin-bottom: 2%;
+  margin-top: 2%;
+} */
 #navbar-link{
-    color: #363537;
+    color: white;
     margin: auto;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
 }
 
-.container{
-  background-color: #e8e8f0ec
+#main-screen-container{
+  display:block;
+   background-color: #f7ecf1ec;
 }
 
 .col-xs-12{
@@ -48,15 +58,15 @@
   }
 
   #beach-button{
-    background-color: #ffe066
+    background-color: #e6b32a
   }
 
   #mountain-button{
-    background-color: #5a9b5d
+    background-color: #478b4a
   }
 
   #city-button{
-    background-color: #f25f5c
+    background-color: #df6603
   }
 
   #lake-button{
@@ -64,13 +74,64 @@
   }
 
   #space-button{
-    background-color: #50514f
+    background-color: #7085b1
   }
 
+#location-screen-container{
+  background-color: #f7ecf1ec;
+  display:none;
+  text-align: center;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.drinks {
+  font-size: 48px;
+  color: white;
+}
+.bi-brightness-alt-high {
+  color: orange;
+}
+.bi-brightness-alt-high-fill {
+  color: yellow;
+}
+#location-jumbo{
+  background-color: #fafaffec;
+}
+#cityName {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+   color: black;
+  }
 
-
+  .jumbotron {
+      align-items: center;
+      width: 100%;
+  }
+  .card {
+      background-color: skyblue;
+  }
+  .weather {
+      width: 90%;
+      height: 95%;
+      margin: 2%;
+      padding: 2%;
+      color: white;
+  }
+  #drink-pic{
+    width: 100px;
+    height:100px;
+  }
+  /* .location-video{
+    align-items: center;
+    margin: 0 auto;
+  } */
+  /* .music {
+      color: white;
+      text-align: center;
+  } */
 /* Colors
 #93E1D8 Middle Green Blue */
-#96E8BC Light green blue
+/* #96E8BC Light green blue
 good mountain: #1b4332
-another space 247ba0
+another space 247ba0 */

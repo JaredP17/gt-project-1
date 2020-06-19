@@ -9,7 +9,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/style.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="Assets/style.css">
 </head>
 <body>
     <nav class="navbar navbar-light" id="nav-bar">
@@ -17,31 +17,45 @@
           >Remote Island</a
         >
       </nav>
-    <div class="row">
+    <!-- <div class="row">
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h2 class="display-4 d-flex justify-content-center" id="cityName">Destination Station</h2>
           <iframe class= "mainVideo d-flex" width="560" height="315" src="https://www.youtube.com/embed/oilZ1hNZPRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class= "row">
         <div class= "col-sm-12 weatherCard d-flex justify-content-center">
+
+
+
+          
         <div class="card">
-            <p class="weather"> image of weather // temp: // wind:</p>
-            <p class="weather">  <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <h4 class="cityName"> <img id="weatherIconUrl"> </h4>
+          <img id="weatherIcon">
+          <p class="weather" id="temp"></p>
+          <p class="weather" id="windSpeed"></p>
+
+            <p class="weather"> </p>
+            <p class="weather" id="sunrise">  <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"/>
-            </svg>  <span id="sunrise">Sunrise: </span>  </p>
-            <p class="weather"> <svg class="bi bi-brightness-alt-high" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            </svg>  <span id="sunriseTime">Sunrise: </span>  </p>
+            <p class="weather" id="sunset"> <svg class="bi bi-brightness-alt-high" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M5.041 10.5h5.918a3 3 0 0 0-5.918 0zM4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"/>
             </svg>
-            <span id="sunset">Sunset:</span>
+            <span id="sunsetTime">Sunset:</span>
             </p>
           </div>
+
+
+
+
+
         </div>
     </div>
 
-    <div class= "row">
+    <!-- <div class= "row">
       <div class= "col-sm-12 weatherCard d-flex justify-content-center">
       <div class="card">
           <p class="music"> music
@@ -61,7 +75,7 @@
         <p class="drinks"> Cocktail Name</p>
       </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -74,5 +88,7 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
 integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
 crossorigin="anonymous"></script>
+<script src= "Assets/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
