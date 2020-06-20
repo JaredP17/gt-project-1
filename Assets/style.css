@@ -144,6 +144,11 @@
 #return-home-button{
   background-color: #f39c18;
 }
+
+iframe {
+  width: 80%;
+  height: 400px;
+}
 /* .location-video{
     align-items: center;
     margin: 0 auto;
