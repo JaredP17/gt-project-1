@@ -1,4 +1,4 @@
-#whole-site {
+body {
   background-color: #ffffffec;
 }
 
@@ -82,7 +82,6 @@
   text-align: center;
   margin: auto;
   font-family: "Montserrat", sans-serif;
-  border-radius: 25px;
   background-image: url("./Images/beach-1/3968744.jpg");
   background-size: cover;
   background-repeat: round;
