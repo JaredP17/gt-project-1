@@ -114,10 +114,17 @@
 }
 #sun-card {
   background-color: #2d8999;
-  font-size: 17px;
+}
+.city-name{
+  font-size: 20px;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+.weather{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
 #drink-card {
   background-color: #2d8999;
   font-size: 20px;
@@ -128,6 +135,12 @@
   background-color: #f39c18;
   border-radius: 12px;
   margin-top: 10px;
+}
+
+.recipe{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 .weather {

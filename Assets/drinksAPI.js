@@ -80,6 +80,8 @@ $(document).ready(function () {
       if (recipe) {
         $("#recipe-text").append(`<p>` + "Recipe: " + recipe + `</p>`);
       }
+      
+    
 
       // $("#ingredients-text").append(`<p>` + "Ingredients: " + ingredientOne + ", " + ingredientTwo +", " + ingredientThree +", " + ingredientFour +`</p>`)
       // $("#recipe-text").append(`<p>` + "Recipe: " + recipe+`</p>`)
