@@ -1,107 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Style Sheet Linked -->
     <link rel="stylesheet" href="./Assets/style.css" />
     <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <!-- Google Font Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@600&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:ital,wght@1,600&family=Open+Sans:wght@600;700&display=swap"
-        rel="stylesheet">
-
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:ital,wght@1,600&family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>REMOTE ISLAND</title>
-</head>
+  </head>
 
-<body id="whole-site">
+  <body id="whole-site">
     <!-- Nav Bar  -->
     <nav class="navbar navbar-light" id="nav-bar">
-        <a class="navbar-brand" href="./index.html" id="navbar-link">Remote Island</a>
+      <a class="navbar-brand" href="./index.html" id="navbar-link"
+        >Remote Island</a
+      >
     </nav>
     <!-- Main Screen Container-->
     <div class="container" id="main-screen-container">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="row mt-4" id="welcome-message-row">
-                    <p id="welcome-message">Choose your escape...</p>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="row mt-4" id="welcome-message-row">
+            <p id="welcome-message">Choose your escape...</p>
+          </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-12 col-lg">
-                <button class="location-button" id="beach-button" value="beach">Beach</button>
-            </div>
-
-            <div class="col-12 col-lg">
-                <button class="location-button" id="mountain-button" value="mountain">Mountain</button>
-            </div>
-
-            <div class="col-12 col-lg">
-                <button class="location-button" id="city-button" value="city">City</button>
-            </div>
-
-            <div class="col-12 col-lg">
-                <button class="location-button" id="lake-button" value="lake">Lake</button>
-            </div>
-
-            <div class="col-12 col-lg">
-                <button class="location-button" id="space-button" value="space">Space</button>
-            </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 col-lg">
+          <button class="location-button" id="beach-button" value="beach">
+            Beach
+          </button>
         </div>
+
+        <div class="col-12 col-lg">
+          <button class="location-button" id="mountain-button" value="mountain">
+            Mountain
+          </button>
+        </div>
+
+        <div class="col-12 col-lg">
+          <button class="location-button" id="city-button" value="city">
+            City
+          </button>
+        </div>
+
+        <div class="col-12 col-lg">
+          <button class="location-button" id="lake-button" value="lake">
+            Lake
+          </button>
+        </div>
+
+        <div class="col-12 col-lg">
+          <button class="location-button" id="space-button" value="space">
+            Space
+          </button>
+        </div>
+      </div>
+      <!-- Attempted Help Pop Up -->
+      <!-- <div class="row-mt-4">
+        <button
+          type="button"
+          class="btn btn-lg btn-danger"
+          data-placement="top"
+          data-toggle="popover"
+          id="help-button"
+          title="Popover title"
+          data-content="And here's some amazing content. It's very engaging. Right?"
+        >
+          Travel Help
+        </button>
+      </div> -->
     </div>
 
     <!-- Location Container -->
     <div class="container" id="location-screen-container">
-        <!--Location name and video-->
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <p id="cityName">
-                    Waimea Bay, Hawaii
-                </p>
+      <!--Location name and video-->
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <p id="cityName">
+            Waimea Bay, Hawaii
+          </p>
 
-                <iframe width="380" height="300" src="https://www.youtube.com/embed/-gjQP7ABEK0?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                    allowscriptaccess="always"; id="location-video"></iframe>
+          <iframe
+            width="380"
+            height="300"
+            src="https://www.youtube.com/embed/-gjQP7ABEK0?enablejsapi=1&version=3&playerapiid=ytplayer"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            allowscriptaccess="always"
+            ;
+            id="location-video"
+          ></iframe>
+        </div>
+      </div>
+
+      <!--Weather Card-->
+      <div class="row">
+        <div
+          class="col-12 col-lg-3 d-flex justify-content-center"
+          id="weather-col"
+        >
+          <div
+            class="card text-white mb-3"
+            style="max-width: 18rem;"
+            id="sun-card"
+          >
+            <div class="card-body">
+              <h4 class="cityName"><img id="weatherIconUrl" /></h4>
+              <p class="weather" id="temp"></p>
+              <p class="weather" id="windSpeed"></p>
+              <p class="weather"></p>
+              <p class="weather" id="sunrise">
+                <svg
+                  class="bi bi-brightness-alt-high-fill"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"
+                  />
+                </svg>
+                <span id="sunriseTime">Sunrise: </span>
+              </p>
+              <p class="weather" id="sunset">
+                <svg
+                  class="bi bi-brightness-alt-high"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.041 10.5h5.918a3 3 0 0 0-5.918 0zM4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"
+                  />
+                </svg>
+                <span id="sunsetTime">Sunset:</span>
+              </p>
             </div>
+          </div>
         </div>
 
-
-        <!--Weather Card-->
-        <div class="row">
-            <div class="col-12 col-lg-3 d-flex justify-content-center" id="weather-col">
-                <div class="card text-white  mb-3" style="max-width: 18rem;" id="sun-card">
-                    <div class="card-body">
-                        <h4 class="cityName"> <img id="weatherIconUrl"> </h4>
-                        <p class="weather" id="temp"></p>
-                        <p class="weather" id="windSpeed"></p>
-                        <p class="weather"> </p>
-                        <p class="weather" id="sunrise"> <svg class="bi bi-brightness-alt-high-fill" width="1em"
-                                height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z" />
-                            </svg> <span id="sunriseTime">Sunrise: </span> </p>
-                        <p class="weather" id="sunset"> <svg class="bi bi-brightness-alt-high" width="1em" height="1em"
-                                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.041 10.5h5.918a3 3 0 0 0-5.918 0zM4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z" />
-                            </svg>
-                            <span id="sunsetTime">Sunset:</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
+        <!-- <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z" />
@@ -120,9 +187,9 @@
             </div>
         </div> -->
 
-            <!-- Music card if needed -->
-            <!-- <div class="row"> -->
-            <!-- <div class="col-sm-12 weatherCard d-flex justify-content-center">
+        <!-- Music card if needed -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-sm-12 weatherCard d-flex justify-content-center">
           <div class="card">
             <p class="music">
               music
@@ -145,48 +212,68 @@
         </div>
       </div> -->
 
+        <!--Drink Card-->
 
-            <!--Drink Card-->
-
-            <div class="col-12 col-lg-3 d-flex justify-content-center" id="drink-col">
-                <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
-                    <div class="card-header" id="drink-name"></div>
-                    <div class="card-body">
-                        <img src="" id="drink-pic" /><br>
-                        <button type="button" class="btn btn-primary" id="drink-recipe-button">Recipe</button><br>
-                        <p id="ingredients-text"></p>
-                        <div id="recipe-text"></div>
-                    </div>
-                </div>
+        <div
+          class="col-12 col-lg-3 d-flex justify-content-center"
+          id="drink-col"
+        >
+          <div
+            class="card text-white mb-3"
+            style="max-width: 18rem;"
+            id="drink-card"
+          >
+            <div class="card-header" id="drink-name"></div>
+            <div class="card-body">
+              <img src="" id="drink-pic" /><br />
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="drink-recipe-button"
+              >
+                Recipe</button
+              ><br />
+              <p id="ingredients-text"></p>
+              <div id="recipe-text"></div>
             </div>
+          </div>
         </div>
-            <div class="row">
-                <div class="col-12 col-lg-3 d-flex justify-content-center" id="return-home-col">
-                    <button class="btn btn-primary" id="return-home-button" value="home">New destination.</button>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-12 col-lg-3 d-flex justify-content-center"
+          id="return-home-col"
+        >
+          <button class="btn btn-primary" id="return-home-button" value="home">
+            New destination.
+          </button>
         </div>
-    
-
+      </div>
+    </div>
 
     <!-- https://recipetineats.com/wp-content/uploads/2019/09/Tequila-Sunrise.jpg -->
     <!-- jQuery Links -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <script src="Assets/script.js"></script>
     <script src="./Assets/drinksAPI.js"></script>
     <!-- Moment
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
     <!-- AJAX JQ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</body>
-
+  </body>
 </html>
