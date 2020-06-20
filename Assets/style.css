@@ -1,4 +1,4 @@
-#whole-site {
+body {
   background-color: #ffffffec;
 }
 
@@ -82,6 +82,9 @@
   text-align: center;
   margin: auto;
   font-family: "Montserrat", sans-serif;
+  background-image: url("./Images/beach-1/3968744.jpg");
+  background-size: cover;
+  background-repeat: round;
 }
 /* .drinks {
 } */
@@ -144,6 +147,17 @@
 #return-home-button{
   background-color: #f39c18;
 }
+
+/* #yt-stream {
+  
+
+} */
+
+iframe {
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
 /* .location-video{
     align-items: center;
     margin: 0 auto;
