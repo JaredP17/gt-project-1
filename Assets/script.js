@@ -29,6 +29,9 @@ var APIKey = "889cd95742cb4d318b134906ce82bcb0";
         console.log(time2);
         console.log(time2.split(":")[0] + ":" + time2.split(":")[1] + " PM");
     })
+
+
+
   //Click on nav-bar, hides location.  I don't know if conditional works properly.
   $("#nav-bar").on("click", function (event) {
     event.preventDefault();
@@ -56,4 +59,17 @@ var APIKey = "889cd95742cb4d318b134906ce82bcb0";
     $("#main-screen-container").css("display", "none");
     $("#location-screen-container").css("display", "block");
   });
+
+
+//Return to main screen button "New Destination"
+//Get video to stop if still playing. 
+$("#return-home-button").on("click", function(event){
+  event.preventDefault();
+  $("#main-screen-container").css("display", "block");
+  $("#location-screen-container").css("display", "none");
+  $("#location-video").each(function(){
+    this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+  });
+});
+
 });
