@@ -39,7 +39,9 @@ var APIKey = "889cd95742cb4d318b134906ce82bcb0";
     if ($("#location-screen-container").css("display", "block")) {
       $("#location-screen-container").css("display", "none");
       $("#main-screen-container").css("display", "block");
-    } else {
+      $("#location-video").each(function(){
+        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    })} else {
     }
     console.log("nav-bar clicked");
   });
