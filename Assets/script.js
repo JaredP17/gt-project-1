@@ -43,6 +43,9 @@ $(document).ready(function () {
     console.log(time2.split(":")[0] + ":" + time2.split(":")[1] + " PM");
   });
 
+
+
+    
   //Click on nav-bar, hides location.  I don't know if conditional works properly.
   $("#nav-bar").on("click", function (event) {
     event.preventDefault();
