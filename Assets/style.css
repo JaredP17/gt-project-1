@@ -139,6 +139,11 @@ body {
   border-radius: 12px;
   margin-top: 10px;
 }
+#ingredient-page-button {
+  background-color: #f39c18;
+  border-radius: 12px;
+  margin-top: 10px;
+}
 
 .recipe{
   display: block;

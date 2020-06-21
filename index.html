@@ -234,11 +234,24 @@
                 type="button"
                 class="btn btn-primary"
                 id="drink-recipe-button"
+                data-toggle="collapse" 
+                data-target=".recipe" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="collapseExample"
               >
                 Recipe</button
-              ><br />
+              >
               <p class="recipe" id="ingredients-text"></p>
-              <div class="recipe" id="recipe-text"></div>
+              <div class="recipe" id="recipe-text">
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary recipe"
+                id="ingredient-page-button"
+              >
+                Still Thirsty?</button>
+              </div>
             </div>
           </div>
         </div>
