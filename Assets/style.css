@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-  background-color: #2d8999;
+  background-color: #28666e;
 }
 
 /* .row {
@@ -58,15 +58,15 @@ body {
 }
 
 #beach-button {
-  background-color: #e6b32a;
+  background-color: #b5b682
 }
 
 #mountain-button {
-  background-color: #478b4a;
+  background-color: #478b71;
 }
 
 #city-button {
-  background-color: #df6603;
+  background-color: #3a6ea5;
 }
 
 #lake-button {
@@ -74,7 +74,7 @@ body {
 }
 
 #space-button {
-  background-color: #7085b1;
+  background-color: #033f63;
 }
 
 #location-screen-container {
@@ -116,7 +116,7 @@ body {
   width: 100%;
 }
 #sun-card {
-  background-color: #2d8999;
+  background-color: #28666e;
 }
 .city-name{
   font-size: 20px;
@@ -129,13 +129,14 @@ body {
 }
 
 #drink-card {
-  background-color: #2d8999;
+  background-color: #28666e;
   font-size: 20px;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 #drink-recipe-button {
-  background-color: #f39c18;
+  background-color: #ffffff;
+  color: #28666e;
   border-radius: 12px;
   margin-top: 10px;
 }
@@ -158,7 +159,8 @@ body {
   height: 100px;
 }
 #return-home-button{
-  background-color: #f39c18;
+  background-color: #ffffff;
+  color: #28666e;
 }
 
 /* #yt-stream {
@@ -183,4 +185,5 @@ iframe {
 #93E1D8 Middle Green Blue */
 /* #96E8BC Light green blue
 good mountain: #1b4332
-another space 247ba0 */
+another space 247ba0 
+Old nav bar: 2d8999;*/
