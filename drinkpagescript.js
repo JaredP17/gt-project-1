@@ -47,7 +47,7 @@ $("#add-ingredient").on("click", function (event) {
 });
 
    function displayIngredientInfo(event, element) {
-        // clearJumbotron();
+        clearJumbotron();
         console.log(event, element);
 
         var ingredient = $(element).text();
@@ -65,9 +65,8 @@ $("#add-ingredient").on("click", function (event) {
               x = random + x;
                 console.log(x);
           }
-          $("#nameOfDrink").append("Drink Name: " + response.drinks[x].strDrink);
           var drink = response.drinks[x].strDrink
-          console.log(drink);
+          $("#nameOfDrink").append("Drink Name: " + drink);
 
           var drinkPhotoUrl = response.drinks[x].strDrinkThumb;
           $("#drinkPhotoUrl").attr("src", drinkPhotoUrl);
@@ -161,11 +160,9 @@ $("#add-ingredient").on("click", function (event) {
             // var img = "<img id='ingredientIconUrl'>";
             $("#drinkPhotoUrl").attr("src", "");
             $("#nameOfDrink").text("")
+            $(".currentIngredientName").text("");
+
             // $(".drinkIconUrl").attr("src", "");
             // $("#ingredient").text("");
           }
-
-
-
-
         })

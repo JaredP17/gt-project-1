@@ -76,7 +76,9 @@ body {
 #space-button {
   background-color: #7085b1;
 }
-
+#drink-page-container{
+  display: none;
+}
 #location-screen-container {
   display: none;
   text-align: center;
@@ -164,8 +166,26 @@ body {
   border-radius: 12px;
 
 }
+#drinkPhotoUrl {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  text-align: center
+}
 #return-home-button{
   background-color: #f39c18;
+}
+#nameOfDrink{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(29, 29, 39);
+}
+#currentIngredientName{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(29, 29, 39);
 }
 
 /* #yt-stream {
