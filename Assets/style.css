@@ -159,8 +159,10 @@ body {
   color: white;
 }
 #drink-pic {
-  width: 100px;
-  height: 100px;
+  width: 90%;
+  height: 90%;
+  border-radius: 12px;
+
 }
 #return-home-button{
   background-color: #f39c18;

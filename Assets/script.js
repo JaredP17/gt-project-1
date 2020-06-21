@@ -99,7 +99,11 @@ $(document).ready(function () {
   //   $('[data-toggle="popover"]').popover();   
   // });
 
-
+$("#ingredient-page-button").on("click", function (event) {
+    event.preventDefault();
+    $("#drink-page-container").css("display", "block");
+    $("#location-screen-container").css("display", "none");
+})
 
 
 });
