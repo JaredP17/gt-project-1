@@ -140,6 +140,11 @@ body {
   border-radius: 12px;
   margin-top: 10px;
 }
+#ingredient-page-button {
+  background-color: #f39c18;
+  border-radius: 12px;
+  margin-top: 10px;
+}
 
 .recipe{
   display: block;
@@ -155,8 +160,10 @@ body {
   color: white;
 }
 #drink-pic {
-  width: 100px;
-  height: 100px;
+  width: 90%;
+  height: 90%;
+  border-radius: 12px;
+
 }
 #return-home-button{
   background-color: #ffffff;

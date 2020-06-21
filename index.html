@@ -177,20 +177,42 @@
           </div>
         </div>
       </div> -->
+        <!--Drink Card-->
 
-            <!--Drink Card-->
-
-            <div class="col-12 col-lg-3 d-flex justify-content-center" id="drink-col">
-                <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
-                    <div class="card-header" id="drink-name"></div>
-                    <div class="card-body">
-                        <img src="" id="drink-pic" /><br />
-                        <button type="button" class="btn btn-primary" id="drink-recipe-button">
-                            Recipe</button><br />
-                        <p class="recipe" id="ingredients-text"></p>
-                        <div class="recipe" id="recipe-text"></div>
-                    </div>
-                </div>
+        <div
+          class="col-12 col-lg-3 d-flex justify-content-center"
+          id="drink-col"
+        >
+          <div
+            class="card text-white mb-3"
+            style="max-width: 18rem;"
+            id="drink-card"
+          >
+            <div class="card-header" id="drink-name"></div>
+            <div class="card-body">
+              <img src="" id="drink-pic" /><br />
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="drink-recipe-button"
+                data-toggle="collapse" 
+                data-target=".recipe" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="collapseExample"
+              >
+                Recipe</button
+              >
+              <p class="recipe" id="ingredients-text"></p>
+              <div class="recipe" id="recipe-text">
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary recipe"
+                id="ingredient-page-button"
+              >
+                Still Thirsty?</button>
+              </div>
             </div>
         </div>
         <div class="row">

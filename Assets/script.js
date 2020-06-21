@@ -21,7 +21,7 @@ $(document).ready(function () {
     $("#windSpeed").append("Wind: " + response.wind.speed + " mph");
     var weatherIconEl = response.weather[0].icon;
     var weatherIconUrl =
-      "https://openweathermap.org/img/w/" + weatherIconEl + ".png";
+      "https://openweathermap.org/img/wn/" + weatherIconEl + ".png";
     $("#weatherIconUrl").attr("src", weatherIconUrl);
     var sunrise = response.sys.sunrise;
     var date = new Date(sunrise * 1000);
@@ -99,7 +99,11 @@ $(document).ready(function () {
   //   $('[data-toggle="popover"]').popover();   
   // });
 
-
+$("#ingredient-page-button").on("click", function (event) {
+    event.preventDefault();
+    $("#drink-page-container").css("display", "block");
+    $("#location-screen-container").css("display", "none");
+})
 
 
 });
