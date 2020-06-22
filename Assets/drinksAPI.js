@@ -13,8 +13,8 @@ $(document).ready(function () {
 
     //clicking button to show the drink ingredients and recipe
     $("#drink-recipe-button").on("click", function () {
-      $("#ingredients-text").empty();
-      $("#recipe-text").empty();
+      $("#ingredients-text").html("");
+      $("#recipe-text").html("");
       var ingredientOne = randomDrinkResponse.drinks[0].strIngredient1;
       var ingredientTwo = randomDrinkResponse.drinks[0].strIngredient2;
       var ingredientThree = randomDrinkResponse.drinks[0].strIngredient3;
@@ -81,16 +81,6 @@ $(document).ready(function () {
         $("#recipe-text").append(`<p>` + "Recipe: " + recipe + `</p>`);
       }
 
-      // $("#ingredients-text").append(`<p>` + "Ingredients: " + ingredientOne + ", " + ingredientTwo +", " + ingredientThree +", " + ingredientFour +`</p>`)
-      // $("#recipe-text").append(`<p>` + "Recipe: " + recipe+`</p>`)
-
-      // const drinksObject = randomDrinkResponse.drinks[0]
-      // for( const drinksProperty in drinksObject ){
-      //   console.log(drinksIngredients)
-      //     var  drinksIngredients =(`${drinksProperty}: ${drinksObject[drinksProperty]}`)
-      //     }
     });
   });
 });
-
-// code to try to get ingredients, saving for later
