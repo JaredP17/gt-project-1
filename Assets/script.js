@@ -47,22 +47,22 @@ $(document).ready(function () {
 
     
   //Click on nav-bar, hides location.  I don't know if conditional works properly.
-  $("#navbar-link").on("click", function (event) {
-    event.preventDefault();
-    //if statement for "if main screen show, hide, if location screen, show"
-    if ($("#location-screen-container").css("display", "block")) {
-      $("#location-screen-container").css("display", "none");
-      $("#main-screen-container").css("display", "block");
-      $("#location-video").each(function () {
-        this.contentWindow.postMessage(
-          '{"event":"command","func":"stopVideo","args":""}',
-          "*"
-        );
-      });
-    } else {
-    }
-    console.log("nav-bar clicked");
-  });
+  // $("#navbar-link").on("click", function (event) {
+  //   event.preventDefault();
+  //   //if statement for "if main screen show, hide, if location screen, show"
+  //   if ($("#location-screen-container").css("display", "block")) {
+  //     $("#location-screen-container").css("display", "none");
+  //     $("#main-screen-container").css("display", "block");
+  //     $("#location-video").each(function () {
+  //       this.contentWindow.postMessage(
+  //         '{"event":"command","func":"stopVideo","args":""}',
+  //         "*"
+  //       );
+  //     });
+  //   } else {
+  //   }
+  //   console.log("nav-bar clicked");
+  // });
 
   //Mountain-Button Click display location, hide home.
   //   $("#mountain-button").on("click", function (event) {
