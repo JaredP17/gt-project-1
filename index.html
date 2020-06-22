@@ -24,7 +24,7 @@
 
 <body>
     <!-- Nav Bar  -->
-    <nav class="navbar navbar-light" id="nav-bar">
+    <nav class="navbar navbar-light nav-header" id="nav-bar">
         <a class="navbar-brand" href="./index.html" id="navbar-link">
             <h1>Remote Island</h1>
         </a>
@@ -59,46 +59,69 @@
             </div>
         </div>
     </nav>
+
+    <div class="container-fluid">
+        <div class="row ml-3">
+          <p class="col-12 mt-2" id="welcome-message">Choose your escape...</p>
+        </div>
+  
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler mb-3 collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse mb-3 collapse"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav" id="travel-btns">
+              <div class="col-12 col-lg mt-2">
+                <button class="location-button" id="beach-button" value="beach">
+                  Beach
+                </button>
+              </div>
+              <div class="col-12 col-lg mt-2">
+                <button
+                  class="location-button"
+                  id="mountain-button"
+                  value="mountain"
+                >
+                  Mountain
+                </button>
+              </div>
+              <div class="col-12 col-lg mt-2">
+                <button class="location-button col" id="city-button" value="city">
+                  City
+                </button>
+              </div>
+              <div class="col-12 col-lg mt-2">
+                <button class="location-button col" id="lake-button" value="lake">
+                  Lake
+                </button>
+              </div>
+              <div class="col-12 col-lg mt-2">
+                <button
+                  class="location-button col"
+                  id="space-button"
+                  value="space"
+                >
+                  Space
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     <!-- Main Screen Container-->
     <div class="container" id="main-screen-container">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="row mt-4" id="welcome-message-row">
-                    <p id="welcome-message">Choose your escape...</p>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-12 col-lg">
-                <button class="location-button" id="beach-button" value="beach">
-                    Beach
-                </button>
-            </div>
-
-            <div class="col-12 col-lg">
-                <button class="location-button" id="mountain-button" value="mountain">
-                    Mountain
-                </button>
-            </div>
-
-            <div class="col-12 col-lg">
-                <button class="location-button" id="lake-button" value="lake">
-                    Lake
-                </button>
-            </div>
-             
-            <div class="col-12 col-lg">
-                <button class="location-button" id="city-button" value="city">
-                    City
-                </button>
-            </div>
-
-
-            <div class="col-12 col-lg">
-                <button class="location-button" id="space-button" value="space">
-                    Space
-                </button>
-            </div>
+       
         </div>
         <!-- Attempted Help Pop Up -->
         <!-- <div class="row-mt-4">
