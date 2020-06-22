@@ -1,9 +1,9 @@
-#whole-site {
+body {
   background-color: #ffffffec;
 }
 
 .navbar {
-  background-color: #2d8999;
+  background-color: #28666e;
 }
 
 /* .row {
@@ -17,6 +17,10 @@
   font-size: 25px;
 }
 
+#help-button{
+  background-color: whitesmoke;
+  color: #28666e;
+}
 #main-screen-container {
   display: block;
 }
@@ -58,15 +62,15 @@
 }
 
 #beach-button {
-  background-color: #e6b32a;
+  background-color: #b5b682
 }
 
 #mountain-button {
-  background-color: #478b4a;
+  background-color: #478b71;
 }
 
 #city-button {
-  background-color: #df6603;
+  background-color: #3a6ea5;
 }
 
 #lake-button {
@@ -74,14 +78,19 @@
 }
 
 #space-button {
-  background-color: #7085b1;
+  background-color: #033f63;
 }
-
+#drink-page-container{
+  display: none;
+}
 #location-screen-container {
   display: none;
   text-align: center;
   margin: auto;
   font-family: "Montserrat", sans-serif;
+  background-image: url("./Images/beach-1/3968744.jpg");
+  background-size: cover;
+  background-repeat: round;
 }
 /* .drinks {
 } */
@@ -113,21 +122,51 @@
   width: 100%;
 }
 #sun-card {
-  background-color: #2d8999;
-  font-size: 17px;
+  background-color: #28666e;
+}
+.city-name{
+  font-size: 20px;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+.weather{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
 #drink-card {
-  background-color: #2d8999;
+  background-color: #28666e;
   font-size: 20px;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 #drink-recipe-button {
+  background-color: #ffffff;
+  color: #28666e;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+#ingredient-recipe-button {
+  background-color: #ffffff;
+  color: #28666e;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+#ingredient-page-button {
   background-color: #f39c18;
   border-radius: 12px;
   margin-top: 10px;
+}
+
+.recipe{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.drinkRecipe{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 .weather {
@@ -138,12 +177,44 @@
   color: white;
 }
 #drink-pic {
-  width: 100px;
-  height: 100px;
+  width: 90%;
+  height: 90%;
+  border-radius: 12px;
+
+}
+#drinkPhotoUrl {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  text-align: center
 }
 #return-home-button{
-  background-color: #f39c18;
+  background-color: #ffffff;
+  color: #28666e;
 }
+#nameOfDrink{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(29, 29, 39);
+}
+#currentIngredientName{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(29, 29, 39);
+}
+
+/* #yt-stream {
+  
+
+} */
+
+iframe {
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
 /* .location-video{
     align-items: center;
     margin: 0 auto;
@@ -156,4 +227,5 @@
 #93E1D8 Middle Green Blue */
 /* #96E8BC Light green blue
 good mountain: #1b4332
-another space 247ba0 */
+another space 247ba0 
+Old nav bar: 2d8999;*/
