@@ -38,12 +38,17 @@ UI experience that is mobile first.
 
 [Link to Code](#).
  
+![Web Page 1](Assets/Images/ReadMe/ReadMe3.png)<br>
+![Web Page 2](Assets/Images/ReadMe/ReadMe1.png)<br>
+![Web Page 3](Assets/Images/ReadMe/ReadMe2.png)<br>
 
-![Web Page 1](#)
 
 ## Credits
 
 This was our first project for the Georgia Tech, FullStack Flex Program.
+OpenWeather API [https://openweathermap.org/]
+YouTube API [https://developers.google.com/youtube/v3]
+CocktailDB API [https://www.thecocktaildb.com/api.php]
 
 ## MIT_License
 

@@ -1,5 +1,16 @@
-body {
-  background-color: black;
+html {
+  background-image: url(./Images/main-bg/1976241.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+body { 
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -15,6 +26,10 @@ body {
 }
 
 .container-fluid {
+  background-color: transparent;
+}
+
+#nav-container {
   background-color: white;
 }
 
@@ -97,7 +112,6 @@ body {
   text-align: center;
   margin: auto;
   font-family: "Montserrat", sans-serif;
-  background-image: url("./Images/beach-1/3968744.jpg");
   background-size: cover;
   background-repeat: round;
 }

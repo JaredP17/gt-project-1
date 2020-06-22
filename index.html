@@ -29,7 +29,7 @@
             <h1>Remote Island</h1>
         </a>
         <!-- Button trigger modal -->
-        <button type="button" class="btn" id= "help-button" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn" id="help-button" data-toggle="modal" data-target="#exampleModalCenter">
             ?
         </button>
 
@@ -49,8 +49,8 @@
                         taken to your destination page. You will be presented with a live stream video of a the
                         location of your choice. You will see current weather of your location, and be served a
                         virtual cocktail. Click on the recipe button to learn how to make it yourself. If you are
-                        finished with your current vacation and want to travel somewhere new, click "New
-                        Destination".
+                        finished with your current vacation and want to travel somewhere new, use the navigation menu to
+                        select a new location.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
@@ -60,14 +60,10 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row ml-3">
-          <p class="col-12 mt-2 text-left" id="welcome-message">Choose your escape...</p>
-        </div>
-  
+    <div class="container-fluid" id="nav-container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <button
-            class="navbar-toggler mb-3 collapsed"
+            class="navbar-toggler my-2"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavAltMarkup"
@@ -78,7 +74,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="navbar-collapse mb-3 collapse"
+            class="navbar-collapse my-2 collapse show"
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav" id="travel-btns">
@@ -116,15 +112,14 @@
                 </button>
               </div>
             </div>
-          </div>
         </nav>
-      </div>
+    </div>
     <!-- Main Screen Container-->
     <div class="container" id="main-screen-container">
-       
-        </div>
-        <!-- Attempted Help Pop Up -->
-        <!-- <div class="row-mt-4">
+
+    </div>
+    <!-- Attempted Help Pop Up -->
+    <!-- <div class="row-mt-4">
         <button
           type="button"
           class="btn btn-lg btn-danger"
@@ -144,8 +139,8 @@
         <!--Location name and video-->
         <div class="row" id="#yt-stream-row">
             <div class="col-12 col-lg-12">
-                <p id="cityName">
-                    Waimea Bay, Hawaii
+                <p>
+                    Visiting: <span id="destination"></span>
                 </p>
 
                 <div id="yt-stream">
@@ -187,150 +182,26 @@
                 </div>
             </div>
 
-            <!-- <svg class="bi bi-brightness-alt-high-fill" width="1em" height="1em" viewBox="0 0 16 16"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z" />
-                        </svg>
-                        <span id="sunrise">Sunrise: </span>
-                    </p>
-                    <p class="weather">
-                        <svg class="bi bi-brightness-alt-high" width="1em" height="1em" viewBox="0 0 16 16"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M5.041 10.5h5.918a3 3 0 0 0-5.918 0zM4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z" />
-                        </svg>
-                        <span id="sunset">Sunset:</span>
-                    </p>
-                </div>
-            </div>
-        </div> -->
-
-            <!-- Music card if needed -->
-            <!-- <div class="row"> -->
-            <!-- <div class="col-sm-12 weatherCard d-flex justify-content-center">
-          <div class="card">
-            <p class="music">
-              music
-              <svg
-                class="bi bi-music-player-fill"
-                width="5em"
-                height="5em"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3zm7 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
-                />
-                <circle cx="8" cy="11" r="1" />
-              </svg>
-            </p>
-          </div>
-        </div>
-      </div> -->
-        <!--Drink Card-->
-
-        <div
-          class="col-12 col-lg-3 d-flex justify-content-center"
-          id="drink-col"
-        >
-          <div
-            class="card text-white mb-3"
-            style="max-width: 18rem;"
-            id="drink-card"
-          >
-            <div class="card-header" id="drink-name"></div>
-            <div class="card-body">
-              <img src="" id="drink-pic" /><br />
-              <button
-                type="button"
-                class="btn btn-primary"
-                id="drink-recipe-button"
-                data-toggle="collapse" 
-                data-target=".recipe" 
-                role="button" 
-                aria-expanded="false" 
-                aria-controls="collapseExample"
-              >
-                Recipe</button
-              >
-              <p class="recipe" id="ingredients-text"></p>
-              <div class="recipe" id="recipe-text">
-              </div>
-              <button
-                type="button"
-                class="btn btn-primary recipe"
-                id="new-drink-button"
-              >
-                Want Another Drink?</button>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div>
-
-      <!-- This is the drink page/ container -->
-       <div class="container" id= "drink-page-container">
-        <div class="row">
-            <div class="col-sm-3 bg-light">
-                <form id="ingredient-form">
-                    <label for="ingredient-input">
-                        <h4>Drinks by Ingredient: </h4>
-                    </label>
-                    <input type="text" id="ingredient-input" class="my-2 w75">
-                    <button id="add-ingredient" class="btn btn-primary">
-                        <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                            <path fill-rule="evenodd"
-                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                        </svg>
-                    </button>
-                </form>
-                <div id="listGroupView">
-                    <ul class="list-group" id="ingredientList">
-                    </ul>
-                </div>
-            </div>
-            <div class="currentIngredient col-sm-9">
-                <div id="jumbo" class="jumbotron">
-                    <h3 class="display-5 currentIngredientName"> </h3>
-                    <h3 id="nameOfDrink"> </h3>
-                    <img id="drinkPhotoUrl">
-                    <button type="button" class="btn btn-primary" 
-                        id="ingredient-recipe-button"
-                        type="button"
-                        class="btn btn-primary"
-                        data-toggle="collapse" 
-                        data-target=".drinkRecipe" 
-                        role="button" 
-                        aria-expanded="false" 
-                        aria-controls="collapseExample">
-                        Get Recipe</button>
-                    <hr class="my-4">
-                    <div class="row">
-                        <br/>
-                        <p class="drinkRecipe" id="ingredientsText"></p>
-                        <div class="drinkRecipe" id="recipeText"></div>
+            
+            <!--Drink Card-->
+            <div class="col-12 col-lg-3 d-flex justify-content-center" id="drink-col">
+                <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
+                    <div class="card-header" id="drink-name"></div>
+                    <div class="card-body">
+                        <img src="" id="drink-pic" /><br />
+                        <button type="button" class="btn btn-primary" id="drink-recipe-button" data-toggle="collapse"
+                            data-target=".recipe" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Recipe</button>
+                        <p class="recipe" id="ingredients-text"></p>
+                        <div class="recipe" id="recipe-text">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="new-drink-button">
+                            Want Another Drink?</button>
                     </div>
-
                 </div>
             </div>
-
-
         </div>
     </div>
-
-        <div class="row">
-            <div class="col-12 col-lg-3 d-flex justify-content-center" id="return-home-col">
-                <button class="btn btn-primary" id="return-home-button" value="home">
-                    New destination.
-                </button>
-            </div>
-        </div>
 
     <!-- https://recipetineats.com/wp-content/uploads/2019/09/Tequila-Sunrise.jpg -->
     <!-- jQuery Links -->
