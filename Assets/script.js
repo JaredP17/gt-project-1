@@ -47,22 +47,22 @@ $(document).ready(function () {
 
     
   //Click on nav-bar, hides location.  I don't know if conditional works properly.
-  $("#navbar-link").on("click", function (event) {
-    event.preventDefault();
-    //if statement for "if main screen show, hide, if location screen, show"
-    if ($("#location-screen-container").css("display", "block")) {
-      $("#location-screen-container").css("display", "none");
-      $("#main-screen-container").css("display", "block");
-      $("#location-video").each(function () {
-        this.contentWindow.postMessage(
-          '{"event":"command","func":"stopVideo","args":""}',
-          "*"
-        );
-      });
-    } else {
-    }
-    console.log("nav-bar clicked");
-  });
+  // $("#navbar-link").on("click", function (event) {
+  //   event.preventDefault();
+  //   //if statement for "if main screen show, hide, if location screen, show"
+  //   if ($("#location-screen-container").css("display", "block")) {
+  //     $("#location-screen-container").css("display", "none");
+  //     $("#main-screen-container").css("display", "block");
+  //     $("#location-video").each(function () {
+  //       this.contentWindow.postMessage(
+  //         '{"event":"command","func":"stopVideo","args":""}',
+  //         "*"
+  //       );
+  //     });
+  //   } else {
+  //   }
+  //   console.log("nav-bar clicked");
+  // });
 
   //Mountain-Button Click display location, hide home.
   //   $("#mountain-button").on("click", function (event) {
@@ -78,21 +78,13 @@ $(document).ready(function () {
     console.log($(this).val());
     $("#main-screen-container").css("display", "none");
     $("#location-screen-container").css("display", "block");
+    $(".navbar-toggle").addClass("collapsed");
+    $(".navbar-collapse").removeClass("show");
   });
 
   //Return to main screen button "New Destination"
   //Get video to stop if still playing.
-  $("#return-home-button").on("click", function (event) {
-    event.preventDefault();
-    $("#main-screen-container").css("display", "block");
-    $("#location-screen-container").css("display", "none");
-    $("#location-video").each(function () {
-      this.contentWindow.postMessage(
-        '{"event":"command","func":"stopVideo","args":""}',
-        "*"
-      );
-    });
-  });
+  
   //App assistance popover button. Not working yet.
   // $(function(){
   //   $('[data-toggle="popover"]').popover();   
@@ -262,5 +254,6 @@ function displayIngredientInfo(event, element) {
       $("#nameOfDrink").text("")
       $(".currentIngredientName").text("");
     }
+
 
   });
