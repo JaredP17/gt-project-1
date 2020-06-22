@@ -78,6 +78,8 @@ $(document).ready(function () {
     console.log($(this).val());
     $("#main-screen-container").css("display", "none");
     $("#location-screen-container").css("display", "block");
+    $(".navbar-toggle").addClass("collapsed");
+    $(".navbar-collapse").removeClass("show");
   });
 
   //Return to main screen button "New Destination"
@@ -262,5 +264,6 @@ function displayIngredientInfo(event, element) {
       $("#nameOfDrink").text("")
       $(".currentIngredientName").text("");
     }
+
 
   });
