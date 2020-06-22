@@ -1,11 +1,54 @@
 $(document).ready(function () {
   var APIKey = "889cd95742cb4d318b134906ce82bcb0"; // Open Weather
-  // var beachCityArray = ["Honolulu", "Miami", "Malibu", "Cancun", "Cape Cod"]
-  var beachCity = "Miami";
-  // var mountainCity = ["Breckenridge", "Park City Utah", "Mount Everest", "Mount Fuji", "Yosemeti"]
-  // var cityCity = ["London", "Paris", "Tokyo","New York", "Dubai"]
-  // var lakeCity = ["Lake Tahoe", "Lake Michigan", "Crater Lake", "Lake Powell", "Lake Superior"]
-  // var space = ["space"]
+  var beachCity = ["Honolulu", "Miami", "Malibu", "Cancun", "Cape Cod"]
+  var mountainCity = ["Breckenridge", "Park City Utah", "Mount Everest", "Mount Fuji", "Yosemeti"]
+  var cityCity = ["London", "Paris", "Tokyo","New York", "Dubai"]
+  var lakeCity = ["Lake Tahoe", "Lake Michigan", "Crater Lake", "Lake Powell", "Lake Superior"]
+  var space = ["Moon", "Mars", "Saturn", "Sun", "Pluto"]
+
+  $("#beach-button").on("click", function() {
+    for (var i=0; i < 1; i++) {
+      var num = Math.floor(Math.random() * 5);
+      var city = (beachCity[num]);
+      weatherCall (city);
+      clearWeather();
+    }
+  })
+  $("#mountain-button").on("click", function() {
+    for (var i=0; i < 1; i++) {
+      var num = Math.floor(Math.random() * 5);
+      var city = (mountainCity[num]);
+      weatherCall (city);
+      clearWeather();
+    }
+  })
+  $("#city-button").on("click", function() {
+    for (var i=0; i < 1; i++) {
+      var num = Math.floor(Math.random() * 5);
+      var city = (cityCity[num]);
+      weatherCall (city);
+      clearWeather();
+    }
+  })
+  $("#lake-button").on("click", function() {
+    for (var i=0; i < 1; i++) {
+      var num = Math.floor(Math.random() * 5);
+      var city = (lakeCity[num]);
+      weatherCall (city);
+      clearWeather();
+    }
+  })
+  $("#space-button").on("click", function() {
+    for (var i=0; i < 1; i++) {
+      var num = Math.floor(Math.random() * 5);
+      var city = (space[num]);
+      weatherCall (city);
+      clearWeather();
+    }
+  })
+
+  function weatherCall (city) {
+    console.log(city);
   var queryURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
@@ -43,6 +86,15 @@ $(document).ready(function () {
     console.log(time2.split(":")[0] + ":" + time2.split(":")[1] + " PM");
   });
   }
+
+  function clearWeather() {
+    $(".cityName").text("");
+    $("#temp").text("");
+    $("#windSpeed").text("");
+    $("#weatherIconUrl").attr("src", "");
+    $("#sunriseTime").text("");
+    $("#sunsetTime").text("");
+    }
 
   //Click on nav-bar, hides location.  I don't know if conditional works properly.
   // $("#navbar-link").on("click", function (event) {
