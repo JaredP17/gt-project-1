@@ -1,5 +1,8 @@
 body {
   background-color: white;
+  background-image: url(./Images/main-bg/1976241.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 
