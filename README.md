@@ -44,6 +44,9 @@ UI experience that is mobile first.
 ## Credits
 
 This was our first project for the Georgia Tech, FullStack Flex Program.
+OpenWeather API [https://openweathermap.org/]
+YouTube API [https://developers.google.com/youtube/v3]
+CocktailDB API [https://www.thecocktaildb.com/api.php]
 
 ## MIT_License
 
