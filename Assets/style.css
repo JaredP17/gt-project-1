@@ -17,6 +17,10 @@ body {
   font-size: 25px;
 }
 
+#help-button{
+  background-color: whitesmoke;
+  color: #28666e;
+}
 #main-screen-container {
   display: block;
 }
