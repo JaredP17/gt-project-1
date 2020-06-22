@@ -29,7 +29,7 @@
             <h1>Remote Island</h1>
         </a>
         <!-- Button trigger modal -->
-        <button type="button" class="btn" id= "help-button" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn" id="help-button" data-toggle="modal" data-target="#exampleModalCenter">
             ?
         </button>
 
@@ -49,8 +49,8 @@
                         taken to your destination page. You will be presented with a live stream video of a the
                         location of your choice. You will see current weather of your location, and be served a
                         virtual cocktail. Click on the recipe button to learn how to make it yourself. If you are
-                        finished with your current vacation and want to travel somewhere new, click "New
-                        Destination".
+                        finished with your current vacation and want to travel somewhere new, use the navigation menu to
+                        select a new location.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
@@ -64,67 +64,50 @@
         <div class="row ml-3">
           <p class="col-12 mt-2 text-left" id="welcome-message">Choose your escape...</p>
         </div>
-  
+
         <nav class="navbar navbar-expand-lg navbar-light">
-          <button
-            class="navbar-toggler mb-3 collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="navbar-collapse mb-3 collapse"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav" id="travel-btns">
-              <div class="col-12 col-lg mt-2">
-                <button class="location-button" id="beach-button" value="beach">
-                  Beach
-                </button>
-              </div>
-              <div class="col-12 col-lg mt-2">
-                <button
-                  class="location-button"
-                  id="mountain-button"
-                  value="mountain"
-                >
-                  Mountain
-                </button>
-              </div>
-              <div class="col-12 col-lg mt-2">
-                <button class="location-button col" id="city-button" value="city">
-                  City
-                </button>
-              </div>
-              <div class="col-12 col-lg mt-2">
-                <button class="location-button col" id="lake-button" value="lake">
-                  Lake
-                </button>
-              </div>
-              <div class="col-12 col-lg mt-2">
-                <button
-                  class="location-button col"
-                  id="space-button"
-                  value="space"
-                >
-                  Space
-                </button>
-              </div>
+            <button class="navbar-toggler mb-3 collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse mb-3 collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="travel-btns">
+                    <div class="col-12 col-lg mt-2">
+                        <button class="location-button" id="beach-button" value="beach">
+                            Beach
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg mt-2">
+                        <button class="location-button" id="mountain-button" value="mountain">
+                            Mountain
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg mt-2">
+                        <button class="location-button col" id="city-button" value="city">
+                            City
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg mt-2">
+                        <button class="location-button col" id="lake-button" value="lake">
+                            Lake
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg mt-2">
+                        <button class="location-button col" id="space-button" value="space">
+                            Space
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </nav>
-      </div>
+    </div>
     <!-- Main Screen Container-->
     <div class="container" id="main-screen-container">
-       
-        </div>
-        <!-- Attempted Help Pop Up -->
-        <!-- <div class="row-mt-4">
+
+    </div>
+    <!-- Attempted Help Pop Up -->
+    <!-- <div class="row-mt-4">
         <button
           type="button"
           class="btn btn-lg btn-danger"
@@ -230,49 +213,29 @@
           </div>
         </div>
       </div> -->
-        <!--Drink Card-->
+            <!--Drink Card-->
 
-        <div
-          class="col-12 col-lg-3 d-flex justify-content-center"
-          id="drink-col"
-        >
-          <div
-            class="card text-white mb-3"
-            style="max-width: 18rem;"
-            id="drink-card"
-          >
-            <div class="card-header" id="drink-name"></div>
-            <div class="card-body">
-              <img src="" id="drink-pic" /><br />
-              <button
-                type="button"
-                class="btn btn-primary"
-                id="drink-recipe-button"
-                data-toggle="collapse" 
-                data-target=".recipe" 
-                role="button" 
-                aria-expanded="false" 
-                aria-controls="collapseExample"
-              >
-                Recipe</button
-              >
-              <p class="recipe" id="ingredients-text"></p>
-              <div class="recipe" id="recipe-text">
-              </div>
-              <button
-                type="button"
-                class="btn btn-primary recipe"
-                id="new-drink-button"
-              >
-                Want Another Drink?</button>
-              </div>
+            <div class="col-12 col-lg-3 d-flex justify-content-center" id="drink-col">
+                <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
+                    <div class="card-header" id="drink-name"></div>
+                    <div class="card-body">
+                        <img src="" id="drink-pic" /><br />
+                        <button type="button" class="btn btn-primary" id="drink-recipe-button" data-toggle="collapse"
+                            data-target=".recipe" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Recipe</button>
+                        <p class="recipe" id="ingredients-text"></p>
+                        <div class="recipe" id="recipe-text">
+                        </div>
+                        <button type="button" class="btn btn-primary recipe" id="new-drink-button">
+                            Want Another Drink?</button>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-      </div>
+    </div>
 
-      <!-- This is the drink page/ container -->
-       <div class="container" id= "drink-page-container">
+    <!-- This is the drink page/ container -->
+    <div class="container" id="drink-page-container">
         <div class="row">
             <div class="col-sm-3 bg-light">
                 <form id="ingredient-form">
@@ -300,19 +263,13 @@
                     <h3 class="display-5 currentIngredientName"> </h3>
                     <h3 id="nameOfDrink"> </h3>
                     <img id="drinkPhotoUrl">
-                    <button type="button" class="btn btn-primary" 
-                        id="ingredient-recipe-button"
-                        type="button"
-                        class="btn btn-primary"
-                        data-toggle="collapse" 
-                        data-target=".drinkRecipe" 
-                        role="button" 
-                        aria-expanded="false" 
-                        aria-controls="collapseExample">
+                    <button type="button" class="btn btn-primary" id="ingredient-recipe-button" type="button"
+                        class="btn btn-primary" data-toggle="collapse" data-target=".drinkRecipe" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
                         Get Recipe</button>
                     <hr class="my-4">
                     <div class="row">
-                        <br/>
+                        <br />
                         <p class="drinkRecipe" id="ingredientsText"></p>
                         <div class="drinkRecipe" id="recipeText"></div>
                     </div>
@@ -324,7 +281,7 @@
         </div>
     </div>
 
-   
+
     <!-- https://recipetineats.com/wp-content/uploads/2019/09/Tequila-Sunrise.jpg -->
     <!-- jQuery Links -->
 
