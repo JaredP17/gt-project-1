@@ -1,15 +1,12 @@
 body {
-  background-color: #ffffffec;
+  background-color: black;
 }
 
-.navbar {
-  background-color: #28666e;
+
+.nav-header {
+  background-color: #2d8999;
 }
 
-/* .row {
-  margin-bottom: 2%;
-  margin-top: 2%;
-} */
 #navbar-link {
   color: white;
   margin: auto;
@@ -17,28 +14,23 @@ body {
   font-size: 25px;
 }
 
-#help-button{
-  background-color: whitesmoke;
-  color: #28666e;
-}
-#main-screen-container {
-  display: block;
-}
-
-.col-12 {
-  text-align: center;
-  margin: auto;
-  padding: 5px;
-}
-
-#welcome-message-row {
-  height: 15px;
+.container-fluid {
+  background-color: white;
 }
 
 #welcome-message {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: rgb(29, 29, 39);
+}
+
+.navbar-toggler {
+  margin: auto;
+  width: 33%;
+}
+
+#travel-btns {
+  width: 100%;
 }
 
 .location-button {
@@ -59,6 +51,23 @@ body {
   white-space: normal;
   table-layout: fixed;
   display: block;
+}
+
+#help-button{
+  background-color: whitesmoke;
+  color: #28666e;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+#main-screen-container {
+  display: block;
+}
+
+.col-12 {
+  text-align: center;
+  margin: auto;
+  padding: 5px;
 }
 
 #beach-button {
