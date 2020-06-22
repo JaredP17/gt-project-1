@@ -1,9 +1,9 @@
 $(document).ready(function () {
   var APIKey = "889cd95742cb4d318b134906ce82bcb0"; // Open Weather
-  var beachCity = ["Honolulu", "Miami", "Malibu", "Cancun", "Cape Cod"]
-  var mountainCity = ["Breckenridge", "Park City Utah", "Mount Everest", "Mount Fuji", "Yosemeti"]
+  var beachCity = ["Honolulu", "Miami", "Malibu", "Cancun", "Nantucket"]
+  var mountainCity = ["Breckenridge", "Park City", "vail", "Gatlinburg", "Zurich"]
   var cityCity = ["London", "Paris", "Tokyo","New York", "Dubai"]
-  var lakeCity = ["Lake Tahoe", "Lake Michigan", "Crater Lake", "Lake Powell", "Lake Superior"]
+  var lakeCity = ["Chelan", "Branson", "Saugatuck", "Sand Point", "Lake George"]
   var space = ["Moon", "Mars", "Saturn", "Sun", "Pluto"]
 
   $("#beach-button").on("click", function() {
