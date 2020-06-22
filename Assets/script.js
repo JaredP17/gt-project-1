@@ -72,9 +72,40 @@ $(document).ready(function () {
   //Location button click with values
   $(".location-button").on("click", function (event) {
     event.preventDefault();
-    console.log($(this).val());
     $("#main-screen-container").css("display", "none");
     $("#location-screen-container").css("display", "block");
+    var destination = $(this).val();
+    $("#destination").text(destination.toUpperCase());
+
+    // Change background and load content based on selection
+    console.log(destination);
+
+    switch (destination) {
+      case 'beach': {
+        console.log("test");
+        $("body").css("background-image", "url('./Assets/Images/beach-2/3958768.jpg')");
+        break;
+      }
+      case 'mountain': {
+        $("body").css("background-image", "url('./Assets/Images/mountains-1/3443490.jpg')");
+        break;
+      }
+      case 'city': {
+        $("body").css("background-image", "url('./Assets/Images/city-2/37030.jpg')");
+        break;
+      }
+      case 'lake': {
+        $("body").css("background-image", "url('./Assets/Images/lake-1/1868.jpg')");
+        break;
+      }
+      case 'space': {
+        $("body").css("background-image", "url('./Assets/Images/space-1/32042.jpg')");
+        break;
+      }
+      default:
+        break;
+    }
+
     $(".navbar-toggle").addClass("collapsed");
     $(".navbar-collapse").removeClass("show");
   });

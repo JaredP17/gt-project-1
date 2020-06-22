@@ -1,8 +1,16 @@
-body {
-  background-color: white;
+html {
   background-image: url(./Images/main-bg/1976241.jpg);
   background-position: center;
   background-size: cover;
+}
+
+body { 
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -18,6 +26,10 @@ body {
 }
 
 .container-fluid {
+  background-color: transparent;
+}
+
+#nav-container {
   background-color: white;
 }
 
