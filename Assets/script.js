@@ -84,17 +84,7 @@ $(document).ready(function () {
 
   //Return to main screen button "New Destination"
   //Get video to stop if still playing.
-  $("#return-home-button").on("click", function (event) {
-    event.preventDefault();
-    $("#main-screen-container").css("display", "block");
-    $("#location-screen-container").css("display", "none");
-    $("#location-video").each(function () {
-      this.contentWindow.postMessage(
-        '{"event":"command","func":"stopVideo","args":""}',
-        "*"
-      );
-    });
-  });
+  
   //App assistance popover button. Not working yet.
   // $(function(){
   //   $('[data-toggle="popover"]').popover();   
