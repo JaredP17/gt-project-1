@@ -29,7 +29,7 @@
             <h1>Remote Island</h1>
         </a>
         <!-- Button trigger modal -->
-        <button type="button" class="btn" id= "help-button" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn" id="help-button" data-toggle="modal" data-target="#exampleModalCenter">
             ?
         </button>
 
@@ -49,8 +49,8 @@
                         taken to your destination page. You will be presented with a live stream video of a the
                         location of your choice. You will see current weather of your location, and be served a
                         virtual cocktail. Click on the recipe button to learn how to make it yourself. If you are
-                        finished with your current vacation and want to travel somewhere new, click "New
-                        Destination".
+                        finished with your current vacation and want to travel somewhere new, use the navigation menu to
+                        select a new location.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
@@ -112,15 +112,14 @@
                 </button>
               </div>
             </div>
-          </div>
         </nav>
-      </div>
+    </div>
     <!-- Main Screen Container-->
     <div class="container" id="main-screen-container">
-       
-        </div>
-        <!-- Attempted Help Pop Up -->
-        <!-- <div class="row-mt-4">
+
+    </div>
+    <!-- Attempted Help Pop Up -->
+    <!-- <div class="row-mt-4">
         <button
           type="button"
           class="btn btn-lg btn-danger"
@@ -226,49 +225,29 @@
           </div>
         </div>
       </div> -->
-        <!--Drink Card-->
+            <!--Drink Card-->
 
-        <div
-          class="col-12 col-lg-3 d-flex justify-content-center"
-          id="drink-col"
-        >
-          <div
-            class="card text-white mb-3"
-            style="max-width: 18rem;"
-            id="drink-card"
-          >
-            <div class="card-header" id="drink-name"></div>
-            <div class="card-body">
-              <img src="" id="drink-pic" /><br />
-              <button
-                type="button"
-                class="btn btn-primary"
-                id="drink-recipe-button"
-                data-toggle="collapse" 
-                data-target=".recipe" 
-                role="button" 
-                aria-expanded="false" 
-                aria-controls="collapseExample"
-              >
-                Recipe</button
-              >
-              <p class="recipe" id="ingredients-text"></p>
-              <div class="recipe" id="recipe-text">
-              </div>
-              <button
-                type="button"
-                class="btn btn-primary recipe"
-                id="ingredient-page-button"
-              >
-                Still Thirsty?</button>
-              </div>
+            <div class="col-12 col-lg-3 d-flex justify-content-center" id="drink-col">
+                <div class="card text-white mb-3" style="max-width: 18rem;" id="drink-card">
+                    <div class="card-header" id="drink-name"></div>
+                    <div class="card-body">
+                        <img src="" id="drink-pic" /><br />
+                        <button type="button" class="btn btn-primary" id="drink-recipe-button" data-toggle="collapse"
+                            data-target=".recipe" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Recipe</button>
+                        <p class="recipe" id="ingredients-text"></p>
+                        <div class="recipe" id="recipe-text">
+                        </div>
+                        <button type="button" class="btn btn-primary recipe" id="new-drink-button">
+                            Want Another Drink?</button>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-      </div>
+    </div>
 
-      <!-- This is the drink page/ container -->
-       <div class="container" id= "drink-page-container">
+    <!-- This is the drink page/ container -->
+    <div class="container" id="drink-page-container">
         <div class="row">
             <div class="col-sm-3 bg-light">
                 <form id="ingredient-form">
@@ -296,19 +275,13 @@
                     <h3 class="display-5 currentIngredientName"> </h3>
                     <h3 id="nameOfDrink"> </h3>
                     <img id="drinkPhotoUrl">
-                    <button type="button" class="btn btn-primary" 
-                        id="ingredient-recipe-button"
-                        type="button"
-                        class="btn btn-primary"
-                        data-toggle="collapse" 
-                        data-target=".drinkRecipe" 
-                        role="button" 
-                        aria-expanded="false" 
-                        aria-controls="collapseExample">
+                    <button type="button" class="btn btn-primary" id="ingredient-recipe-button" type="button"
+                        class="btn btn-primary" data-toggle="collapse" data-target=".drinkRecipe" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
                         Get Recipe</button>
                     <hr class="my-4">
                     <div class="row">
-                        <br/>
+                        <br />
                         <p class="drinkRecipe" id="ingredientsText"></p>
                         <div class="drinkRecipe" id="recipeText"></div>
                     </div>
@@ -320,13 +293,6 @@
         </div>
     </div>
 
-        <div class="row">
-            <div class="col-12 col-lg-3 d-flex justify-content-center" id="return-home-col">
-                <button class="btn btn-primary" id="return-home-button" value="home">
-                    New destination.
-                </button>
-            </div>
-        </div>
 
     <!-- https://recipetineats.com/wp-content/uploads/2019/09/Tequila-Sunrise.jpg -->
     <!-- jQuery Links -->

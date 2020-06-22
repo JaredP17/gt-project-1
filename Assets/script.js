@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     
   //Click on nav-bar, hides location.  I don't know if conditional works properly.
-  $("#nav-bar").on("click", function (event) {
+  $("#navbar-link").on("click", function (event) {
     event.preventDefault();
     //if statement for "if main screen show, hide, if location screen, show"
     if ($("#location-screen-container").css("display", "block")) {
