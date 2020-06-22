@@ -215,6 +215,62 @@
               </div>
             </div>
         </div>
+        </div>
+      </div>
+
+      <!-- This is the drink page/ container -->
+       <div class="container" id= "drink-page-container">
+        <div class="row">
+            <div class="col-sm-3 bg-light">
+                <form id="ingredient-form">
+                    <label for="ingredient-input">
+                        <h4>Drinks by Ingredient: </h4>
+                    </label>
+                    <input type="text" id="ingredient-input" class="my-2 w75">
+                    <button id="add-ingredient" class="btn btn-primary">
+                        <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                        </svg>
+                    </button>
+                </form>
+                <div id="listGroupView">
+                    <ul class="list-group" id="ingredientList">
+                    </ul>
+                </div>
+            </div>
+            <div class="currentIngredient col-sm-9">
+                <div id="jumbo" class="jumbotron">
+                    <h3 class="display-5 currentIngredientName"> </h3>
+                    <h3 id="nameOfDrink"> </h3>
+                    <img id="drinkPhotoUrl">
+                    <button type="button" class="btn btn-primary" 
+                        id="ingredient-recipe-button"
+                        type="button"
+                        class="btn btn-primary"
+                        data-toggle="collapse" 
+                        data-target=".drinkRecipe" 
+                        role="button" 
+                        aria-expanded="false" 
+                        aria-controls="collapseExample">
+                        Get Recipe</button>
+                    <hr class="my-4">
+                    <div class="row">
+                        <br/>
+                        <p class="drinkRecipe" id="ingredientsText"></p>
+                        <div class="drinkRecipe" id="recipeText"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
         <div class="row">
             <div class="col-12 col-lg-3 d-flex justify-content-center" id="return-home-col">
                 <button class="btn btn-primary" id="return-home-button" value="home">
@@ -222,7 +278,6 @@
                 </button>
             </div>
         </div>
-    </div>
 
     <!-- https://recipetineats.com/wp-content/uploads/2019/09/Tequila-Sunrise.jpg -->
     <!-- jQuery Links -->
