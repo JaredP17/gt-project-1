@@ -137,22 +137,27 @@ $(document).ready(function () {
       case 'beach': {
         console.log("test");
         $("body").css("background-image", "url('./Assets/Images/beach-2/3958768.jpg')");
+        renderVideos(vidIds.beaches);
         break;
       }
       case 'mountain': {
         $("body").css("background-image", "url('./Assets/Images/mountains-1/3443490.jpg')");
+        renderVideos(vidIds.mountains);
         break;
       }
       case 'city': {
         $("body").css("background-image", "url('./Assets/Images/city-2/37030.jpg')");
+        renderVideos(vidIds.cities);
         break;
       }
       case 'lake': {
         $("body").css("background-image", "url('./Assets/Images/lake-1/1868.jpg')");
+        renderVideos(vidIds.lakes);
         break;
       }
       case 'space': {
         $("body").css("background-image", "url('./Assets/Images/space-1/32042.jpg')");
+        renderVideos(vidIds.space);
         break;
       }
       default:

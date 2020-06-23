@@ -1,16 +1,35 @@
-console.log("LIVESTREAM LOGS");
-var googleKey = "AIzaSyBQd8ZnnSkHadouS8UtIK6aEgjDnR6vlMo";
-var queryURL = "https://www.googleapis.com/youtube/v3/search?";
-var urlExample =
-  "https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&type=video&q=ocean&videoEmbeddable=true&key=AIzaSyBQd8ZnnSkHadouS8UtIK6aEgjDnR6vlMo";
-$.ajax({
-  url: urlExample,
-  method: "GET",
-}).then(function (response) {
-  console.log(response);
-  for (var i = 0; i < response.items.length; i++) {
-    $("#yt-videos").append(
-      `<iframe width="560" height="315" src="https://www.youtube.com/embed/${response.items[i].id.videoId}" frameborder="0" controls="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-    );
+const vidIds = {
+  beaches : ["UQRDv3HtmUA", "OXX8emUmOGs", "-HAi_5IIAYg"],
+  mountains : ["Zsqep7_9_mw", "2R2gb0MKJlo", "xiBZKJkeC_k"],
+  cities : ["f0l7vmoI3KM", "u7QdRygIHDI", "j4AeFIEbijM"],
+  lakes : ["thHgzWlveqs", "Ge7gwdGCfqA", "L7b7r_cbMQQ"],
+  space : ["DDU-rZs-Ic4", "tNkZsRW7h2c"]//, "_92nLcq79uE"]
+}
+
+console.log(vidIds);
+console.log(vidIds.mountains[1]);
+
+function renderVideos(videos) {
+  var videoRow = $("#yt-stream-row");
+  videoRow.empty();
+
+  for (var i = 0; i < videos.length; i++) {
+    var id = videos[i];
+    videoRow.append(`
+    <div class="col-12 col-xl">
+          <div id="yt-stream">
+            <iframe
+              width="380"
+              height="300"
+              src="https://www.youtube.com/embed/${id}?enablejsapi=1&version=3&playerapiid=ytplayer"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              allowscriptaccess="always"
+              id="location-video"
+            ></iframe>
+          </div>
+        </div>
+    `);
   }
-});
+}
