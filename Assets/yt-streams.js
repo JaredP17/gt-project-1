@@ -3,7 +3,7 @@ const vidIds = {
   mountains : ["Zsqep7_9_mw", "2R2gb0MKJlo", "xiBZKJkeC_k"],
   cities : ["f0l7vmoI3KM", "u7QdRygIHDI", "j4AeFIEbijM"],
   lakes : ["thHgzWlveqs", "Ge7gwdGCfqA", "L7b7r_cbMQQ"],
-  space : ["DDU-rZs-Ic4", "tNkZsRW7h2c", "_92nLcq79uE"]
+  space : ["DDU-rZs-Ic4", "tNkZsRW7h2c"]//, "_92nLcq79uE"]
 }
 
 console.log(vidIds);
