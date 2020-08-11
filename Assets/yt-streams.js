@@ -1,5 +1,5 @@
 const vidIds = {
-  beaches : ["UQRDv3HtmUA", "OXX8emUmOGs", "-HAi_5IIAYg"],
+  beaches : ["UQRDv3HtmUA", "-HAi_5IIAYg"],
   mountains : ["Zsqep7_9_mw", "2R2gb0MKJlo", "xiBZKJkeC_k"],
   cities : ["f0l7vmoI3KM", "u7QdRygIHDI", "j4AeFIEbijM"],
   lakes : ["thHgzWlveqs", "Ge7gwdGCfqA", "L7b7r_cbMQQ"],
